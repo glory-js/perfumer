@@ -1,0 +1,47 @@
+{
+  "name": "@glory-js/perfumer",
+  "version": "0.1.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "scripts": {
+    "build": "pnpm build:clean && pnpm build:tsup  && pnpm build:copyFile",
+    "build:tsup": "tsup index.ts antd/index.ts core/index.ts --format cjs,esm --dts",
+    "build:clean": "rimraf ./dist",
+    "build:copyFile": "node ../../scripts/copyFiles.mjs",
+    "dev": "tsup index.ts --format cjs,esm --dts --watch",
+    "lint": "eslint \"**/*.ts\""
+  },
+  "devDependencies": {
+    "@glory-js/eslint-config": "workspace:^",
+    "@glory-js/typescript-config": "workspace:^",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.2"
+  },
+  "tsup": {
+    "entry": [
+      "index.ts",
+      "antd/index.ts",
+      "core/index.ts"
+    ],
+    "format": [
+      "cjs",
+      "esm"
+    ],
+    "dts": [
+      "index.ts",
+      "antd/index.ts",
+      "core/index.ts"
+    ]
+  }
+}

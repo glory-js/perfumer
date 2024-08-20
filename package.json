@@ -1,0 +1,21 @@
+{
+  "name": "glory-js",
+  "scripts": {
+    "build": "turbo build --filter=!./examples/*",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "cs": "pnpm changeset",
+    "csv": "pnpm changeset version",
+    "csp": "pnpm changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.7",
+    "@glory-js/eslint-config": "workspace:^",
+    "eslint": "^8.57.0",
+    "fs-extra": "^11.2.0",
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.13"
+  },
+  "packageManager": "pnpm@8.15.6"
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "@glory-js/typescript-config/vite.json",
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "experimentalDecorators": true
+
+  }
+}
