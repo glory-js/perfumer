@@ -8,7 +8,7 @@ const buildPath = path.join(packagePath, './dist');
 
 export async function copyPackageFile() {
     const packageData = await fse.readFile(path.resolve(packagePath, './package.json'), 'utf8');
-    const { tsup, scripts, devDependencies, ...packageDataOther } =
+    const { tsup, scripts, publishConfig, devDependencies, ...packageDataOther } =
         JSON.parse(packageData);
 
     const entryPoints = {

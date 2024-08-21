@@ -2,7 +2,7 @@ import {
   TableController,
   TableColumn,
   FormController,
-} from '@glory-js/perfumer/antd';
+} from '@glory-js/perfumer-antd';
 
 @TableController()
 @FormController()

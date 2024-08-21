@@ -1,4 +1,4 @@
-import { createPerfumer } from '../core';
+import { createPerfumer } from '@glory-js/perfumer';
 
 import {
   storeKey,

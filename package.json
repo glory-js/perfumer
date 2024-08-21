@@ -1,5 +1,5 @@
 {
-  "name": "glory-js",
+  "name": "perfumer",
   "scripts": {
     "build": "turbo build --filter=!./examples/*",
     "dev": "turbo dev",

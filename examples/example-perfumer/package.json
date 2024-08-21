@@ -1,7 +1,7 @@
 {
   "name": "@examples/perfumer",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite --clearScreen false",
@@ -13,7 +13,7 @@
     "@ant-design/pro-components": "^2.7.15",
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
-    "@glory-js/perfumer": "workspace:^",
+    "@glory-js/perfumer-antd": "workspace:^",
     "@tanstack/react-router": "^1.48.4",
     "antd": "^5.20.2",
     "react": "^18.3.1",

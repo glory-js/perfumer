@@ -6,7 +6,7 @@ import {
   FormItem,
   FormItemTools,
   withTypes,
-} from '@glory-js/perfumer/antd';
+} from '@glory-js/perfumer-antd';
 import Base from './-base';
 
 const tablesViewer = {

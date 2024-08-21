@@ -1,5 +1,5 @@
 {
-  "name": "@glory-js/perfumer",
+  "name": "@glory-js/perfumer-antd",
   "version": "0.2.0",
   "license": "MIT",
   "main": "./src/index.ts",
@@ -27,6 +27,7 @@
     "typescript": "^5.5.4"
   },
   "dependencies": {
+    "@glory-js/perfumer": "workspace:*",
     "reflect-metadata": "^0.2.2"
   }
 }

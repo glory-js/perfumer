@@ -1,4 +1,4 @@
-import { createWithTypes } from '../core';
+import { createWithTypes } from '@glory-js/perfumer';
 export * from './table';
 export * as TableColumnTools from './tableTools';
 export * from './form';
